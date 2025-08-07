@@ -26,7 +26,6 @@ const int CastlePerm[120] = {
     15, 15, 15, 15, 15, 15, 15, 15, 15, 15
 };
 
-// ---------- internal helpers (same behavior, C++-style locals) ----------
 static void ClearPiece(const int sq, S_BOARD* board) {
     ASSERT(SqOnBoard(sq));
     ASSERT(isBoardStateValid(board));
@@ -138,7 +137,6 @@ static void MovePiece(const int from, const int to, S_BOARD* board) {
 #endif
 }
 
-// ---------- public API (same behavior, C++-style locals) ----------
 int makeMove(S_BOARD* board, int move) {
     ASSERT(isBoardStateValid(board));
 
